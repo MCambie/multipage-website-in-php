@@ -1,3 +1,5 @@
+/*  Header */
+
 .menu {
   position: absolute;
   width: 100%;
@@ -27,4 +29,11 @@
 
 .navbar.navbar-expand-lg.navbar-light.bg-light {
   margin: 0;
+}
+
+/*  Footer */
+
+.partner {
+  height: 70px;
+  width: auto;
 }
