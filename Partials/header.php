@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 
 <body>
   <section class="menu">
     <nav class="navbar  navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.php">
-        <img class="logo" src="assets/images/logo_potage-toit_opt.png" alt="Logo">
+        <img class="logo" src="assets/img/logo_potage-toit_opt.png" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,13 +28,13 @@
             <a class="nav-link text-white" href="index.php">Acceuil <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="pages/exper.php">Vos expériences</a>
+            <a class="nav-link text-white" href="exper.php">Vos expériences</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="pages/new.php">News</a>
+            <a class="nav-link text-white" href="news.php">News</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="pages/contact.php">Contact</a>
+            <a class="nav-link text-white" href="contact.php">Contact</a>
           </li>
         </ul>
       </div>
@@ -50,16 +50,16 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/images/IMG_2046-1000x220.jpg" alt="First slide">
+          <img class="d-block w-100" src="assets/img/IMG_2046-1000x220.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/IMG_2475-1000x220.jpg" alt="Second slide">
+          <img class="d-block w-100" src="assets/img/IMG_2475-1000x220.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/IMG_2507-1000x220.jpg" alt="Third slide">
+          <img class="d-block w-100" src="assets/img/IMG_2507-1000x220.jpg" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/IMG_25301-1000x220.jpg" alt="Third slide">
+          <img class="d-block w-100" src="assets/img/IMG_25301-1000x220.jpg" alt="Third slide">
         </div>
 
       </div>

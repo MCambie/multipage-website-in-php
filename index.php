@@ -1,3 +1,3 @@
-<?php include('assets/html/header.html'); ?>
-  <h1>Hello World</h1>
-<?php include('assets/html/footer.html'); ?>
+<?php include('Partials/header.php'); ?>
+  <h1>Hello world</h1>
+<?php include('Partials/footer.php'); ?>

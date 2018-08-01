@@ -11,8 +11,8 @@
         </div>
         <div class="footer-col col-sm-4 col-md-4 col-lg-4">
           <h6>Avec le soutien de : </h6>
-          <img class="partner" src="../images/BXL_FR_NDLS.jpg" alt="Bruxelles-Capitale">
-          <img class="partner" src="../images/logo_ddh.png" alt="Début des Haricots">
+          <img class="partner" src="assets/img/BXL_FR_NDLS.jpg" alt="Bruxelles-Capitale">
+          <img class="partner" src="assets/img/logo_ddh.png" alt="Début des Haricots">
         </div>
         <p class="border-top border-secondary"></p>
         <div class="social-media">
