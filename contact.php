@@ -1,13 +1,5 @@
 <?php
     session_start();
-    echo "<pre>";
-    print_r($_SESSION['error']);
-    echo "</pre>";
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -17,15 +9,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/form.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/form.css" />
 </head>
 <body>
     
     <form enctype="multipart/form-data" method="post" action="function/php/traitement.php">
         <label for="titre">Titre</label><label for="Mme">Mme</label><input type="radio" name="genre" value="mme"><label for="Melle">Melle</label><input type="radio" name="genre" value="melle"><label for="Mr">Mr</label><input type="radio" name="genre" value="mr"><br>
         <label for="lastname">Nom</label><input type="text" name="lastname"><br>
+        <?php
+            // if (empty($_SESSION['lastname'])) {
+            //     if (!$_SESSION['lastname']) {
+            //         echo '<p class="error">'.$_SESSION['error']['nom'].'</p>';
+            //     }
+            // }
+        ?>
         <label for="firstname">Prénom</label><input type="text" name="firstname"><br>
         <label for="email">Email</label><input type="text" name="email"><br>
+        <?php
+        // if (empty($_SESSION['email'])) {
+        //     if (!$_SESSION['email']) {
+        //         echo '<p class="error">'.$_SESSION['error']['email'].'</p>';
+        //     }
+        // }
+        ?>
         <label for="objet">Objet</label>
         <select name="object" id="objet">
             <option value="info" selected>Demande d'informations</option>
@@ -45,6 +51,8 @@
 </body>
 
 <?php 
+
+
     session_destroy(); 
 ?>
 </html>
