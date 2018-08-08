@@ -1,7 +1,10 @@
 .error{
     color: red;
 }
-.errorBorder{
+.errorInput{
     border: solid 2px red;
     border-radius: 5px;
+}
+.send{
+    color: green;
 }
