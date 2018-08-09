@@ -1,18 +1,18 @@
-<?php
-    session_start();
-    function errorName(){
-        if (isset($_SESSION['error_name'])){
-            echo 'class="errorInput"';
-        } 
-    }
-    function errorMail(){
-        if (isset($_SESSION['error_mail'])){
-            echo 'class="errorInput"';
-        } 
-    }
-?>
+    <?php
+        session_start();
+        function errorName(){
+            if (isset($_SESSION['error_name'])){
+                echo 'class="errorInput"';
+            } 
+        }
+        function errorMail(){
+            if (isset($_SESSION['error_mail'])){
+                echo 'class="errorInput"';
+            } 
+        }
+    ?>
 
-<?php include('Partials/header.php'); ?>
+    <?php include('Partials/header.php'); ?>
         <div class="container">
         <?php 
                                 if (isset($_SESSION['msg_send'])) {
@@ -114,9 +114,9 @@
                             <h5>Adresse du potager :</h5>
                             <address>
                                 <strong>Koninkijke Biliothèque Royale</strong><br>
-                                bd de l’empereur 4 <br>
-                                1000 Bruxelles <br>
-                                Accès via la cafétéria au 5ème étage
+                                        bd de l’empereur 4 <br>
+                                        1000 Bruxelles <br>
+                                        Accès via la cafétéria au 5ème étage
                                 <abbr title="Phone">Tel: +32 (0)2 519 53 11</abbr> 
                             </address>
                         </div>
@@ -136,9 +136,9 @@
                 </div>
             </div>  
         </div>     
-<?php 
-   session_destroy(); 
-?>
+    <?php 
+   session_destroy();   
+    ?>
 
-<?php include('Partials/footer.php'); ?>
+    <?php include('Partials/footer.php'); ?>
 
