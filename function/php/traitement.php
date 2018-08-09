@@ -135,7 +135,6 @@
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
-
-
-   header('Location: ' .$_SERVER['HTTP_REFERER']);
+    
+    header('Location: ' .$_SERVER['HTTP_REFERER']);
 ?>
