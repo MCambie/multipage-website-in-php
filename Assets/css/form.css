@@ -8,3 +8,6 @@
 .send{
     color: green;
 }
+.address-col{
+    border-left: solid 1px grey;
+}

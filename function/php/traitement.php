@@ -80,9 +80,9 @@
     function logs($info){
         $date = date('l j/m/Y - G:i:s');
         $file_log = fopen('log.txt', 'a+');
-        fputs($file_log, "\n".$date." ".$info." message: ".ifmsg());
+        fputs($file_log, "\n".$date." ".$info." / message: ".ifmsg());
         fclose($file_log);
-    };
+    };      
 
 
 
@@ -137,5 +137,5 @@
     }
 
 
-   header('Location: ' . $_SERVER['HTTP_REFERER']);
+   header('Location: ' .$_SERVER['HTTP_REFERER']);
 ?>
