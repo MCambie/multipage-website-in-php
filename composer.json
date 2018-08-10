@@ -1,6 +1,7 @@
 {
     "require" : {
-        "phpmailer/phpmailer": "~6.0"
+        "phpmailer/phpmailer": "~6.0",
+        "function/php/traitement.php": "*"
     },
     "require-dev": {
       "heroku/heroku-buildpack-php": "*"
