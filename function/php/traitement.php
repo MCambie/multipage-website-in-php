@@ -102,8 +102,8 @@
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = 'hautecoeurludovic@gmail.com';                 // SMTP username
         require 'mdp.php';                        // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 587;                                    // TCP port to connect to
+        $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 465;                                    // TCP port to connect to
 
         //Recipients
         $mail->setFrom('hautecoeurludovic@gmail.com', 'test');
