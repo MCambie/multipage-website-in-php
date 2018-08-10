@@ -1,3 +1,6 @@
 <?php include('Partials/header.php'); ?>
-  <h1>Enter code here</h1>
+  <div class="container">
+    <h1>Ton Potage-Toit</h1>
+  </div>
+
 <?php include('Partials/footer.php'); ?>

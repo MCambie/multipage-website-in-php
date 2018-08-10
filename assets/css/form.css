@@ -11,3 +11,14 @@
 .address-col{
     border-left: solid 1px grey;
 }
+
+
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .google_map{
+        width: 100%;
+    }
+    .address-col{
+        border-left: none;
+    }
+}

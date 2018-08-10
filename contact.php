@@ -13,7 +13,7 @@
     ?>
 
     <?php include('Partials/header.php'); ?>
-        <div class="container">
+        <div class="container form_global">
         <?php 
                                 if (isset($_SESSION['msg_send'])) {
                                     echo '<h5 class="send">'.$_SESSION['msg_send'].'<h5>';
@@ -68,7 +68,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="objet" class="col-sm-2 col-form-label">Objet</label>
-                            <div class="col-sm-8">
+                            <div class="col-sm-10">
                                 <select name="object" id="objet" class="custom-select">
                                     <option value="info" selected>Demande d'informations</option>
                                     <option value="administration">Administrateur</option>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="message" class="col-sm-2 col-form-label">Votre message</label>
-                            <div class="col-sm-8">
+                            <div class="col-sm-10">
                                 <textarea class="col-sm-12" name="message" id="message" rows="3" required></textarea>
                             </div>
                         </div>       
@@ -130,8 +130,8 @@
                             </address>
                         </div>  
                     </div> 
-                    <div >
-                        <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5038.751716762714!2d4.356704760805859!3d50.84272381105844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47e3e68746d%3A0xb951a4bb3a2a540a!2sBiblioth%C3%A8que+Royale+de+Belgique!5e0!3m2!1sfr!2sbe!4v1533808601298" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="col-sm-12 col-md-6">
+                        <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5038.751716762714!2d4.356704760805859!3d50.84272381105844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47e3e68746d%3A0xb951a4bb3a2a540a!2sBiblioth%C3%A8que+Royale+de+Belgique!5e0!3m2!1sfr!2sbe!4v1533808601298" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>  
