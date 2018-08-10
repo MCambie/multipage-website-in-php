@@ -1,10 +1,11 @@
 {
     "require" : {
-        "phpmailer/phpmailer": "~6.0",
-        "function/php/traitement.php": "*",
-        "function/php/mdp.php": "*"
+      "silex/silex": "^2.0.4",
+      "monolog/monolog": "^1.22",
+      "twig/twig": "^2.0",
+      "symfony/twig-bridge": "^3"
     },
     "require-dev": {
       "heroku/heroku-buildpack-php": "*"
     }
-}
+  }
