@@ -26,18 +26,18 @@ Votre mail à bien été envoyé
 
           <div class="col-sm-6 col-md-6 col-lg-6">
             <label for="inputprenom">Prénom</label>
-            <input type="text" name="firstName" value="" class="form-control" id="inputprenom">
+            <input type="text" name="firstName" value="<?= isset($_SESSION['inputs']['firstName']) ? $_SESSION['inputs']['firstName'] : '' ;?>" class="form-control" id="inputprenom">
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6">
             <label for="inputnom">Nom</label>
-            <input type="text" name="lastName" value="" class="form-control" id="inputnom">
+            <input type="text" name="lastName" value="<?= isset($_SESSION['inputs']['lastName']) ? $_SESSION['inputs']['lastName'] : '' ;?>" class="form-control" id="inputnom">
           </div>
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="inputmail">E-Mail</label>
-            <input type="text" name="_replyto" value="" class="form-control" id="inputmail">
+            <input type="text" name="mail" value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : '' ;?>" class="form-control" id="inputmail">
           </div>
 
-          <div class="col-sm-12 col-md-12 col-lg-12">
+          <!-- <div class="col-sm-12 col-md-12 col-lg-12">
           <label for="objet">Objet</label>
             <select name="object" id="objet">
                 <option value="info" selected>Demande d'informations</option>
@@ -55,7 +55,7 @@ Votre mail à bien été envoyé
               <input type="radio" name="format" value="html">
               <label for="text">text</label>
               <input type="radio" name="format" value="text"><br>
-          </div>
+          </div> -->
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="inputmessage">Message</label>
             <textarea name="message" rows="8" class="form-control" id="inputmessage" ><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
@@ -64,6 +64,9 @@ Votre mail à bien été envoyé
         </div>
       </div>
 </form>
+<h2>Debbug</h2>
+
+<?= var_dump($_SESSION); ?>
 
 <?php include('Partials/footer.php'); ?>
 <?php
