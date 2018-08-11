@@ -7,6 +7,10 @@
 }
 .send{
     color: green;
+    text-align: center;
+    border: solid 1px #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
 }
 .address-col{
     border-left: solid 1px grey;

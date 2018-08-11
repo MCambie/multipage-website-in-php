@@ -129,7 +129,7 @@
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
         $_SESSION['msg_progress'] = "Envoi en progression ...";
         $mail->send();
-        $_SESSION['msg_send'] = "Message envoyé";
+        $_SESSION['msg_send'] = "Votre message a été envoyé avec succès !";
         logs($_SESSION['msg_send'] );
 
     } catch (Exception $e) {

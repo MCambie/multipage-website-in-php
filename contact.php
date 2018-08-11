@@ -14,13 +14,18 @@
 
     <?php include('Partials/header.php'); ?>
         <div class="container form_global">
-        <?php 
-                                if (isset($_SESSION['msg_send'])) {
-                                    echo '<h5 class="send">'.$_SESSION['msg_send'].'<h5>';
-                                } 
-                            ?>
+
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <?php 
+                    if (isset($_SESSION['msg_send'])) {
+                        echo '<div class="col-sm-12 col-md-6"><h3 class="send">'.$_SESSION['msg_send'].'<h3></div>';
+                    } 
+                ?>
+                <div class="col-sm-12 col-md-6" <?php 
+                    if (isset($_SESSION['msg_send'])) {
+                        echo 'style="display:none;"';
+                    } 
+                ?>>
                 <h2>Contacts administration</h2>
                     <form enctype="multipart/form-data" method="post" action="function/php/traitement.php">
                         <fieldset class="form-group">
