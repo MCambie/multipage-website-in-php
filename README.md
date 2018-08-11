@@ -61,3 +61,6 @@ Vous devez livrer un site multi-pages
 
 
 #### Layout
+
+#### UML
+![uml](Formulaire_php.png)
